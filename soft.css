@@ -1,0 +1,45 @@
+/* soft drinks */
+nav {
+    margin-bottom: 1em !important;
+  }
+  h1 {
+    color: #000000;
+  }
+  .cart {
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    padding: 20px;
+    border-radius: 50px;
+  }
+  .tiny {
+    background-color: #ffee00;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  #clear:hover {
+    border-radius: 50PX;
+    background-color: black;
+    color: rgb(255, 230, 0);
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 4rem;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(253, 249, 2);
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }

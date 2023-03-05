@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Just Drinkz</title> 
+<link rel="stylesheet" href="drinks.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<style>
+.mySlides {display:none;}
+</style>
+<header style="background-color: black;"class="sticky">
+        <nav class=" d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a class="py-2" href="drinks.html">
+                <img src="D:\intenship\logo.png" width="200px" height="200px"> 
+            </a>
+            <a href="menu.html" class="top">Your Menu</a>
+        </nav>
+    </header>
+      <div class="container">
+          <div class="row" style="margin-top: 4rem;">
+            <h1 class="jd" style="text-align: center; font-family: cursive;">
+                <b>Just Drinkz 
+                    Quench Your Thirst
+                </b>
+            </h1>
+        </div>
+       <div class="row">
+          <div class="column-66">
+            <div class="column-33">
+                <img class="mySlides" src="D:\intenship\Soft drinks\pepsi.jpg" width="335" height="471">
+                <img class="mySlides" src="D:\intenship\cola.jpg" width="335" height="471">
+                <img class="mySlides" src="D:\intenship\Menu\soft.jpg" width="200" height="200">
+          </div>
+            <h1 class="xlarge-font"><b>Soft Drinks</b></h1>
+            <h1 class="large-font" style="color:MediumSeaGreen;"><b>Grab yours</b></h1>
+            <p><span style="font-size:36px">Make your thirst go away.</span> You should buy these drinks from our web site to quench your thirst, not only for that we are giving these drinks in a safely packed manner and also we sanitize every devilvery, at last we are working on the small tins of soft drinks to be devilver. So grab yours  </p>
+            <a href="soft.html">
+              <button class="button">Grab Your Drink</button>
+            </a>
+         </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <video width="435" height="300" controls>
+              <source src="juice.mp4">
+            </video>
+          </div>
+          <div class="col-sm-8">
+            <h1 class="xlarge-font"><b>Fruit Juice</b></h1>
+            <h1 class="large-font" style="color:red;"><b>Home Made</b></h1>
+            <p><span style="font-size:24px">A new age of Delivery.</span>These drinks are home made,but in a new way of packing.The packing is completly hands free, the fruits used in making the juices are completly fress and the fruits are buyed in daily basis, so choose your favaroite fruit. </p>
+            <a href="fresh.html">
+            <button class="button">Choose Your Fruit</button>
+            </a>
+          </div>
+         </div>
+      </div>
+      
+<div class="container">
+        <div class="row">
+          <div class="column-66">
+            <div class="column-33">
+              <video width="500" height="300" controls>
+                <source src="vegetable.mp4">
+              </video>
+            </div>
+            <h1 class="xlarge-font"><b>Vegetables</b></h1>
+            <h1 class="large-font" style="color:MediumSeaGreen;"><b>How Vegetables to drinks?</b></h1>
+            <p><span style="font-size:36px">We are intrested in care.</span>Your should buy our Vegetablejuices, because we are very much intrested in your health's, As in the pandamic sitution it is necessary to eat or drink more health items which gives a strength to fight against corona, Hence we decided to give you and health drink that comes from our daily day vegetables, Therefore i request all of you to buy atleast these drinks to fight against corona.</p>
+            <a href="veg.html">
+              <button class="button">Fight Corona</button>
+            </a>
+        </div>
+        </div>
+      </div>
+      <footer style="background-color:rgb(253, 165, 0);">
+        <nav class=" d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <a class="py-2" href="drinks.html">
+            <img src="D:\intenship\jd.png" width="200px" height="200px"> 
+          </a>
+          <h1 class="ft">Thank you</h1>
+          <a href="contact.html" class="bottom">Contact US</a>
+        </nav>
+     </footer>
+  </body>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+  </html>

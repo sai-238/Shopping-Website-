@@ -1,0 +1,104 @@
+<!-- Milkshake Page -->
+<html>
+  <head>
+     <title>Milkshake</title>
+     <link rel="stylesheet" href="milk.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+  </head>
+  <body style="background-image: url('bg3.jpg'); background-repeat: no-repeat;background-size: cover; background-position: 60%;">
+   <img src="D:\intenship\jd.png">
+         <a href="../intenship/cart/cart.html">
+           <button class="tiny"> Cart</button>
+         </a> 
+       </nav>
+       <div class="medium-0  columns" style="display: none;">
+         <div class="cart">
+             <h1>Cart items</h1>
+             <div class="row">
+                 <div class="medium-6 columns">
+                     <button class="tiny secondary" id="clear">Clear the cart</button>
+                 </div>
+                 <div class="medium-6 columns">
+                     <button class="tiny disabled" title="Work in progress">Checkout</button>
+                 </div>
+             </div>
+             <div id="cartItems">Loading cart...</div>
+             Total price: <strong id="totalPrice">0 $</strong>
+         </div>
+     </div>
+`       <div class="container">
+         <div class="row">
+          <div class="col-sm">
+           <div class="card product" data-name="Chocolate Milkshake" data-img="D:\intenship\Milkshake\comilk.jpg" data-price="50" data-id="18">
+               <img src="D:\intenship\Milkshake\comilk.jpg" alt="" />
+               <h3>Chocolate Milkshake</h3>
+               <h4>Rs.50</h4>
+               <input type="number" class="count" value="1" />
+               <button class="tiny">Add to cart</button>
+           </div>
+         </div>
+           <div class="col-sm">
+             <div class="card product" data-name="Banana Milkshake" data-img="D:\intenship\Milkshake\bamilk.jpg" data-price="50" data-id="19">
+               <img src="D:\intenship\Milkshake\bamilk.jpg" alt="" />
+               <h3>Banana Milkshake</h3>
+               <h4>Rs.50</h4>
+               <input type="number" class="count" value="1" />
+               <button class="tiny">Add to cart</button>
+           </div>
+         </div>
+           <div class="col-sm">
+             <div class="card product" data-name="Mango Milkshake" data-img="D:\intenship\Milkshake\mamilk.jpg" data-price="50" data-id="20">
+             <img src="D:\intenship\Milkshake\mamilk.jpg" alt="" />
+             <h3>Mango Milkshake</h3>
+             <h4>Rs.50</h4>
+           <input type="number" class="count" value="1" />
+             <button class="tiny">Add to cart</button>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm">
+        <div class="card product" data-name="Oreo Milkshake" data-img="D:\intenship\Milkshake\oreo.jpg" data-price="60" data-id="21">
+           <img src="D:\intenship\Milkshake\oreo.jpg" alt="" />
+           <h3>Oreo Milkshake</h3>
+           <h4>Rs.60</h4>
+           <input type="number" class="count" value="1" />
+           <button class="tiny">Add to cart</button>
+       </div>
+       </div>
+       <div class="col-sm">
+         <div class="card product" data-name="Strawberry Milkshake" data-img="D:\intenship\Milkshake\straw.jpg" data-price="50" data-id="22">
+         <img src="D:\intenship\Milkshake\straw.jpg" alt="" />
+         <h3>Strawberry Milkshake</h3>
+         <h4>Rs.50</h4>
+         <input type="number" class="count" value="1" />
+         <button class="tiny">Add to cart</button>
+     </div>
+     </div>
+     <div class="col-sm">
+       <div class="card product" data-name="Vanilla Milkshake" data-img="D:\intenship\Milkshake\van.jpg" data-price="50" data-id="23">
+       <img src="D:\intenship\Milkshake\van.jpg" alt="" />
+       <h3>Vanilla Milkshake</h3>
+       <h4>Rs.50</h4>
+       <input type="number" class="count" value="1" />
+       <button class="tiny">Add to cart</button>
+       </div> 
+     </div>
+     </div>
+   </div>
+<script type="text/template" id="cartT">
+ <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
+<%= item.count %> piece<% if(item.count > 1)
+{%>s
+<%}%> for <%= item.total %>₹</span > </div>
+<% }); %>
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+<script  src="../intenship/cart/cart.js"></script>
+
+</body>
+</html>

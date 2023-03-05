@@ -1,0 +1,104 @@
+<!-- Fresh Drinks Page -->
+<html>
+     <head>
+         <title>Fresh Drinks</title>
+         <link rel="stylesheet" href="fresh.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+         <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+     </head>
+     <body style="background-image: url('bg.png'); background-repeat: no-repeat;background-size: cover;">
+      <img src="D:\intenship\jd.png">
+            <a href="../intenship/cart/cart.html">
+              <button class="tiny"> Cart</button>
+            </a> 
+          </nav>
+          <div class="medium-0  columns" style="display: none;">
+            <div class="cart">
+                <h1>Cart items</h1>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <button class="tiny secondary" id="clear">Clear the cart</button>
+                    </div>
+                    <div class="medium-6 columns">
+                        <button class="tiny disabled" title="Work in progress">Checkout</button>
+                    </div>
+                </div>
+                <div id="cartItems">Loading cart...</div>
+                Total price: <strong id="totalPrice">0 $</strong>
+            </div>
+        </div>
+            <div class="container">
+            <div class="row">
+             <div class="col-sm">
+              <div class="card product" data-name="Lemon Juice" data-img="D:\intenship\Freshjuice\lemon.jpg" data-price="40" data-id="6">
+                  <img src="D:\intenship\Freshjuice\lemon.jpg" alt="" />
+                  <h3>Lemon Juice</h3>
+                  <h4>Rs.40</h4>
+                  <input type="number" class="count" value="1" />
+                  <button class="tiny">Add to cart</button>
+              </div>
+            </div>
+              <div class="col-sm">
+                <div class="card product" data-name="orange Juice" data-img="D:\intenship\Freshjuice\orange.jpg" data-price="70" data-id="7">
+                  <img src="D:\intenship\Freshjuice\orange.jpg" alt="" />
+                  <h3>Orange Juice</h3>
+                  <h4>Rs.70</h4>
+                  <input type="number" class="count" value="1" />
+                  <button class="tiny">Add to cart</button>
+              </div>
+            </div>
+              <div class="col-sm">
+                <div class="card product" data-name="coconut Drink" data-img="D:\intenship\Freshjuice\tenco.jpg" data-price="60" data-id="8">
+                <img src="D:\intenship\Freshjuice\tenco.jpg" alt="" />
+                <h3>Tender coconut Drink</h3>
+                <h4>Rs.60</h4>
+              <input type="number" class="count" value="1" />
+                <button class="tiny">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+           <div class="card product" data-name="Watermelon Juice" data-img="D:\intenship\Freshjuice\watermelon.jpg" data-price="50" data-id="9">
+              <img src="D:\intenship\Freshjuice\watermelon.jpg" alt="" />
+              <h3>Watermelon Juice</h3>
+              <h4>Rs.50</h4>
+              <input type="number" class="count" value="1" />
+              <button class="tiny">Add to cart</button>
+          </div>
+          </div>
+          <div class="col-sm">
+            <div class="card product" data-name="Mamgo Juice" data-img="D:\intenship\Freshjuice\mango.jpg" data-price="50" data-id="10">
+            <img src="D:\intenship\Freshjuice\mango.jpg" alt="" />
+            <h3>Mango Juice</h3>
+            <h4>Rs.50</h4>
+            <input type="number" class="count" value="1" />
+            <button class="tiny">Add to cart</button>
+        </div>
+        </div>
+        <div class="col-sm">
+          <div class="card product" data-name="Apple Juice" data-img="D:\intenship\Freshjuice\apple.jpg" data-price="60" data-id="11">
+          <img src="D:\intenship\Freshjuice\apple.jpg" alt="" />
+          <h3>Apple Juice</h3>
+          <h4>Rs.60</h4>
+          <input type="number" class="count" value="1" />
+          <button class="tiny">Add to cart</button>
+          </div> 
+        </div>
+        </div>
+      </div>
+  <script type="text/template" id="cartT">
+    <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
+  <%= item.count %> piece<% if(item.count > 1)
+  {%>s
+  <%}%> for <%= item.total %>₹</span > </div>
+  <% }); %>
+  </script>
+   
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+  <script  src="../intenship/cart/cart.js"></script>
+   
+  </body>
+  </html>

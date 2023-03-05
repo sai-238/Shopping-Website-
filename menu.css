@@ -1,0 +1,50 @@
+  /* menu page */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;;
+  }
+  .row{
+    margin-bottom: 4rem;
+  }
+  * {box-sizing: border-box;}
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+  #clear:hover {
+    border-radius: 50PX;
+    background-color: black;
+    color: rgb(255, 230, 0);
+  }
+  .tiny {
+    background-color: #ffee00;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .3s ease;
+    opacity:0;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }

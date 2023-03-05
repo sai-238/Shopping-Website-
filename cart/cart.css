@@ -1,0 +1,25 @@
+nav {
+  margin-bottom: 1em !important;
+}
+h1 {
+  color: #070707;
+}
+.cart {
+  color: #000000;
+  box-shadow: 0 0 5px rgb(255, 0, 0);
+  padding: 20px;
+  border-radius: 60px;
+}
+.btn{
+  border-radius: 50px;
+}
+.tiny {
+  background-color: #000000;
+  color: yellow;
+  border-radius: 50px;
+}
+#clear:hover {
+  border-radius: 50PX;
+  background-color: black;
+  color: rgb(255, 230, 0);
+}
